@@ -13,7 +13,7 @@ layout: default
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <div class="page-heading">
-                        <h1>{{ site.title }}</h1>
+                        <img src="/img/logo.png" style="width:75%">
                         {% if site.description %}
                         <span class="subheading">{{ site.description }}</span>
                         {% endif %}
@@ -34,7 +34,7 @@ layout: default
 
                 <article class="post-preview">
                     <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-                        <img src="/img/logo.png" style="width:75%">
+                        <h2 class="post-title">{{ post.title }}</h2>
                         {% if post.subtitle %}
                         <h3 class="post-subtitle">{{ post.subtitle }}</h3>
                         {% else %}
